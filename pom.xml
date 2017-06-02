@@ -188,7 +188,7 @@
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-tools</artifactId>
             <version>${velocity-tools-version}</version>
-            <exclusions>
+           <!-- <exclusions>
                 <exclusion>
                     <artifactId>dom4j</artifactId>
                     <groupId>dom4j</groupId>
@@ -217,10 +217,10 @@
                     <artifactId>commons-validator</artifactId>
                     <groupId>commons-validator</groupId>
                 </exclusion>
-                <exclusion>
+                &lt;!&ndash;<exclusion>
                     <artifactId>commons-beanutils</artifactId>
                     <groupId>commons-beanutils</groupId>
-                </exclusion>
+                </exclusion>&ndash;&gt;
                 <exclusion>
                     <artifactId>commons-chain</artifactId>
                     <groupId>commons-chain</groupId>
@@ -229,7 +229,13 @@
                     <artifactId>commons-collections</artifactId>
                     <groupId>commons-collections</groupId>
                 </exclusion>
-            </exclusions>
+            </exclusions>-->
+        </dependency>
+
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>RELEASE</version>
         </dependency>
         <!-- JSP视图所需jar -->
         <dependency>
