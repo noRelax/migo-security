@@ -33,7 +33,7 @@ import java.util.Map;
  * @author 知秋
  * @email fei6751803@163.com
  */
-@Service
+@Service("sysConfigService")
 public class SysConfigServiceImpl implements SysConfigService {
 
     @Autowired

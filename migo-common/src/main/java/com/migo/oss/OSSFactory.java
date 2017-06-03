@@ -21,6 +21,7 @@ import com.migo.service.SysConfigService;
 import com.migo.utils.ConfigConstant;
 import com.migo.utils.Constant;
 import com.migo.utils.SpringContextUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author 知秋

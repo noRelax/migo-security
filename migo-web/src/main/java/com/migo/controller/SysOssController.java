@@ -20,6 +20,7 @@ package com.migo.controller;
 import com.alibaba.fastjson.JSON;
 import com.migo.entity.SysOssEntity;
 import com.migo.oss.CloudStorageConfig;
+import com.migo.oss.CloudStorageService;
 import com.migo.oss.OSSFactory;
 import com.migo.service.SysConfigService;
 import com.migo.service.SysOssService;
@@ -123,8 +124,9 @@ public class SysOssController {
             throw new RRException("上传文件不能为空");
         }
 
+        CloudStorageService cloudStorageService = OSSFactory.build();
         //上传文件
-        String url = OSSFactory.build().upload(file.getBytes());
+        String url = cloudStorageService.upload(file.getBytes());
 
         //保存文件信息
         SysOssEntity ossEntity = new SysOssEntity();
